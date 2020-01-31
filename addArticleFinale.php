@@ -13,15 +13,16 @@ $errnom="";
 $errimg="";
 $errprix="";
 
+
 try {
 
     if (isset($_POST['nom_article'])) {
         $nom = $_POST['nom_article'];
 // vérification du champ prix à effectuer avec  la fonction int_nemric(), puis voir si la valeur donner est supérieure à 0
-        if (!intval($_POST['prix_article']) > 0){
-            $errprix = "Vous n'avez pas entré de prix";
-                      $erreurs = false;
+        if(!filter_var($_POST['prix_article'], FILTER_VALIDATE_INT) !== false){
+            $errprix = "Vous n'avez pas entré de prix ";
         }
+
         else{
             //Test 1:  Tester si le fichier a bien été envoyé et s'il n'y a pas d'erreur
             if (isset($_FILES['photo_article']) AND $_FILES['photo_article']['error'] == 0) {
@@ -34,7 +35,7 @@ try {
                     if (in_array($extension_upload, $extensions_autorisees)) {
                         // Si extension autorisée: on peut valider le fichier et le stocker définitivement
                         move_uploaded_file($_FILES['photo_article']['tmp_name'], 'images/' . basename($_FILES['photo_article']['name']));
-                        echo "Votre article a bien été envoyé !";
+                        echo "Votre article a bien été ajouté !";
                     } else {
                         // Si l'extension n'est pas autorisée: on ne valide pas le fichier et on envoie le client vers une page d'erreur
                         $errimg =  "L'extension du fichier n'est pas pris en compte par notre site";
@@ -67,10 +68,10 @@ try {
          <div class="col-sm-12">
             <h1>Création d'un article</h1>
         </div>
-        <form action="addArticle1.php" method="post" enctype="multipart/form-data">
+        <form action="addArticleFinale.php" method="post" enctype="multipart/form-data">
             <p><label>l'image de l'article : <input type="file" name="photo_article" required /></label><?=$errimg ?></p>
             <p><label>Le nom de l'article : <input type="text" name="nom_article" required placeholder="Nom de l'article" value="<?=$nom ?>"/></label></p>
-            <p><label>Le prix de l'article : <input type="text" name="prix_article" required placeholder="Prix en Euros"/></label><?=$errprix ?></p>
+            <p><label>Le prix de l'article : <input type="number" name="prix_article" min=1 required placeholder="Prix en Euros"/></label><?=$errprix ?></p>
             <p><input type="submit" value="Envoyer l'article"></p>
         </form>
       </div>
@@ -80,7 +81,7 @@ try {
 
         afficheArt($_POST['nom_article'], $_POST['prix_article'], basename($_FILES['photo_article']['name']));?>
         <div class="row">
-        <p>Pour ajouter un nouvel article <a href="addArticle1.php">cliquez ici</a></p>
+        <p>Pour ajouter un nouvel article <a href="addArticleFinale.php">cliquez ici</a></p>
     </div>
 
 

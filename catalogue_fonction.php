@@ -28,4 +28,6 @@ function afficheArt($nom, $prix, $img){
             </div>
         </div>
     <?php
-} ?>
+}
+
+?>

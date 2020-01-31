@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7454674-774e-451a-b2de-0c3153194160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addArticle1.php" beforeDir="false" afterPath="$PROJECT_DIR$/addArticle1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addArticle1.php" beforeDir="false" afterPath="$PROJECT_DIR$/addArticleFinale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue_fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue_fonction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/displayArticle1.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,8 @@
       <workItem from="1580135264867" duration="5734000" />
       <workItem from="1580198829393" duration="25235000" />
       <workItem from="1580285007001" duration="22958000" />
+      <workItem from="1580372917364" duration="6985000" />
+      <workItem from="1580477042244" duration="9132000" />
     </task>
     <servers />
   </component>
@@ -70,13 +73,33 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2748" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580136349836" />
-    <state x="2714" y="444" key="NewPhpFileDialog" timestamp="1580294586977">
+    <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1580386404234">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580294586977" />
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580285328353">
+    <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580386404234" />
+    <state x="2714" y="444" key="NewPhpFileDialog" timestamp="1580478899183">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580285328353" />
+    <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580478899183" />
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580373034236">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580373034236" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/addArticleFinale.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/panier.php</url>
+          <line>42</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

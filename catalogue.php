@@ -1,32 +1,57 @@
 <?php
-include('catalogue_fonction.php');
+//print_r($_POST['case']);
 $liste_articles = [
     ["image"=>"images/chapeau_chat.jpg", "name"=>"Chapeau", "price"=>10],
     [ "image"=>"images/pull_cerf.jpg", "name"=>"Pull", "price"=>5],
     ["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>1500]
 ];
-?>
 
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <title>Boutique</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1>Boutique</h1>
-        </div>
-    </div>
+    <head>
+        <title>Boutique</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Boutique</h1>
+                </div>
+            </div>
     <?php
-    afficheArticle($liste_articles);
-    ?>
+    // affichage des variables nommées plus haut ?>
+    <?php      // création de la foreach for pour afficher chaque article avec sa photo, son prix et son nom
+    foreach ($liste_articles as $article){
+        ?>
+            <form method="post" action="panier.php">
+                <div class="row" >
+                    <div class="col">
+                        <img src="<?php  echo $article["image"]; ?>" width="300" class="rounded corners img-fluid"  alt="article à acheter">
+                    </div>
 
-</div>
-</body>
+                    <div class="col">
+                        <h2><?php echo $article["name"];?></h2>
+
+                    </div>
+
+                    <div class="col">
+                        <h2><?php echo $article["price"]." euros" ; ?> </h2>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="case['image']" id="case" /> <label for="case"></label>
+                    </div>
+                </div>
+    <?php } ?>
+                <div class="row-12" >
+                    <input type="submit" value="commander" />
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
