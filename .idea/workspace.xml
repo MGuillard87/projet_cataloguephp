@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7454674-774e-451a-b2de-0c3153194160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/catalogue1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addArticle1.php" beforeDir="false" afterPath="$PROJECT_DIR$/addArticleFinale.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue_fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue_fonction.php" afterDir="false" />
     </list>
@@ -42,6 +39,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -57,12 +55,36 @@
       <workItem from="1580198829393" duration="25235000" />
       <workItem from="1580285007001" duration="22958000" />
       <workItem from="1580372917364" duration="6985000" />
-      <workItem from="1580477042244" duration="9132000" />
+      <workItem from="1580477042244" duration="9230000" />
+      <workItem from="1580716986405" duration="12247000" />
     </task>
+    <task id="LOCAL-00001" summary="1er commit phpstorm">
+      <created>1580732727962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580732727962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1er commit phpstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="1er commit phpstorm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2496" y="179" key="#PHP" timestamp="1580136533826">
@@ -73,6 +95,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2748" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580136349836" />
+    <state x="2505" y="115" key="CommitChangelistDialog2" timestamp="1580732727405">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2505" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732727405" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580732933238">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732933238" />
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1580386404234">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -81,10 +111,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580478899183" />
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580373034236">
+    <state x="2381" y="163" key="SettingsEditor" timestamp="1580732679886">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580373034236" />
+    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732679886" />
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580717428817">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580717428817" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -96,8 +130,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/panier.php</url>
-          <line>42</line>
-          <option name="timeStamp" value="3" />
+          <line>60</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/panier.php</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

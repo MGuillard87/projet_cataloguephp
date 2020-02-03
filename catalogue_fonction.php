@@ -1,8 +1,8 @@
 <?php
 $liste_articles = [
-    ["image"=>"images/chapeau_chat.jpg", "name"=>"Chapeau", "price"=>10],
-    [ "image"=>"images/pull_cerf.jpg", "name"=>"Pull", "price"=>5],
-    ["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>1500]
+    "panier1"=>["image"=>"images/chapeau_chat.jpg", "name"=>"Chapeau", "price"=>10],
+    "panier2"=> ["image"=>"images/pull_cerf.jpg", "name"=>"Pull", "price"=>5],
+    "panier3"=>["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>1500]
 ];
 // création de la fonction pour afficher tous les articles
 function afficheArticle($catalogue_articles){

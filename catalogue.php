@@ -1,10 +1,5 @@
 <?php
-//print_r($_POST['case']);
-$liste_articles = [
-    ["image"=>"images/chapeau_chat.jpg", "name"=>"Chapeau", "price"=>10],
-    [ "image"=>"images/pull_cerf.jpg", "name"=>"Pull", "price"=>5],
-    ["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>1500]
-];
+include ('catalogue_fonction.php');
 
 
 ?>
@@ -27,7 +22,9 @@ $liste_articles = [
     <?php
     // affichage des variables nommées plus haut ?>
     <?php      // création de la foreach for pour afficher chaque article avec sa photo, son prix et son nom
-    foreach ($liste_articles as $article){
+    foreach ($liste_articles as $key=> $article ){
+//        var_dump($liste_articles);
+
         ?>
             <form method="post" action="panier.php">
                 <div class="row" >
@@ -44,7 +41,7 @@ $liste_articles = [
                         <h2><?php echo $article["price"]." euros" ; ?> </h2>
                     </div>
                     <div class="col">
-                        <input type="checkbox" name="case['image']" id="case" /> <label for="case"></label>
+                        <input type="checkbox" name="<?php echo $key?>" id="case" /> <label for="case" ></label>
                     </div>
                 </div>
     <?php } ?>
