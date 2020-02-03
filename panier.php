@@ -32,33 +32,48 @@ include('catalogue_fonction.php');
     // Si $_POST contient une/des données: la case est cochée et on peut afficher les articles
 
     // On va boucler dans la superVariable $_POST pour aller chercher l'information/donnée qui nous intéresse
+    // Création de la variable sum pour calculer le total panier
     $sum = 0;
     foreach ($_POST as $key => $selective) {
         // on enregistre dans une variable les informations récupérées
         $article = $liste_articles[$key];
+        // apppel de la fonction permettant de retourner le total du panier
         $sum =totalPanier($sum, $article['price']);
         ?>
         <div class="row panier">
-            <div class="col">
-                <img src="<?php echo $article['image']; ?>" width="300" class="rounded corners img-fluid"
-                     alt="article à acheter">
+            <div class="col align-self-center"">
+                <img src="<?php echo $article['image']; ?>" width="300" class="rounded corners img-fluid" alt="article à acheter">
             </div>
 
-            <div class="col">
+            <div class="col align-self-center"">
                 <h2><?php echo $article['name'];; ?></h2>
             </div>
 
-            <div class="col">
+            <div class="col align-self-center"">
                 <h2><?php echo $article['price'] . " euros"; ?> </h2>
+            </div>
+
+            <div class="col align-self-center">
+                <h2><?php echo $article['price'] . " euros"; ?> </h2>
+                <form method="post" action="commande.php">
+                    <input type="number" name="quantite" min="1" /> <label for="case">Quantité</label>
+                </form>
             </div>
         </div>
         <?php
 
-    } ?>
+    }
+    // Affichage du total panier
+    ?>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 ">
             <h1>Total commande: <?php echo($sum); ?> euros</h1>
         </div>
+
+        <div class="row">
+            <div class="col-sm-12 ">
+                <input type="submit" value="confirmer la commande" />
+            </div>
         <?php
         }
         else {

@@ -32,20 +32,20 @@ include ('catalogue_fonction.php');
                         <img src="<?php  echo $article["image"]; ?>" width="300" class="rounded corners img-fluid"  alt="article à acheter">
                     </div>
 
-                    <div class="col">
+                    <div class="col align-self-center">
                         <h2><?php echo $article["name"];?></h2>
 
                     </div>
 
-                    <div class="col">
+                    <div class="col align-self-center"">
                         <h2><?php echo $article["price"]." euros" ; ?> </h2>
                     </div>
-                    <div class="col">
+                    <div class="col align-self-center"">
                         <input type="checkbox" name="<?php echo $key?>" id="case" /> <label for="case" ></label>
                     </div>
                 </div>
     <?php } ?>
-                <div class="row-12" >
+                <div class="row-12 align-self-center"" >
                     <input type="submit" value="commander" />
                 </div>
             </form>
