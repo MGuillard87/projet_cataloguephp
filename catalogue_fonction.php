@@ -2,7 +2,7 @@
 $liste_articles = [
     "article1"=>["image"=>"images/chapeau_chat.jpg", "name"=>"Chapeau", "price"=>10 ],
     "article2"=> ["image"=>"images/pull_cerf.jpg", "name"=>"Pull", "price"=>5 ],
-    "article3"=>["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>1500]
+    "article3"=>["image"=> "images/nounours.jpg", "name"=>"Nounours", "price"=>15]
 ];
 // création de la fonction pour afficher tous les articles
 function afficheArticle($catalogue_articles){
@@ -33,9 +33,9 @@ function afficheArt($nom, $prix, $img){
 
 
 // fonction qui retourne le total du panier et affiche ce total
-function totalPanier($sum, $prixProduit)
+function totalPanier($sum, $prixProduit, $quantiProdui)
 {
-       return $sum + $prixProduit;
+       return $sum + $prixProduit* $quantiProdui=intval($quantiProdui) ;
 }
 
 ?>
