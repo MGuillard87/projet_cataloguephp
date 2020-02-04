@@ -1,7 +1,6 @@
 <?php
 include ('catalogue_fonction.php');
-
-
+var_dump($liste_articles);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -19,17 +18,16 @@ include ('catalogue_fonction.php');
                     <h1>Boutique</h1>
                 </div>
             </div>
-    <?php
-    // affichage des variables nommées plus haut ?>
-    <?php      // création de la foreach for pour afficher chaque article avec sa photo, son prix et son nom
-    foreach ($liste_articles as $key=> $article ){
-//        var_dump($liste_articles);
-
-        ?>
             <form method="post" action="panier.php">
+<?php
+    // affichage des variables nommées plus haut
+   // création de la foreach for pour afficher chaque article avec sa photo, son prix et son nom
+    foreach ($liste_articles as $key=> $article ){
+//        var_dump($liste_articles); ?>
+
                 <div class="row" >
                     <div class="col">
-                        <img src="<?php  echo $article["image"]; ?>" width="300" class="rounded corners img-fluid"  alt="article à acheter">
+                        <img src="<?php  echo $article["image"]; ?>"  id="" width="300" class="rounded corners img-fluid"  alt="article à acheter">
                     </div>
 
                     <div class="col align-self-center">
@@ -41,7 +39,7 @@ include ('catalogue_fonction.php');
                         <h2><?php echo $article["price"]." euros" ; ?> </h2>
                     </div>
                     <div class="col align-self-center"">
-                        <input type="checkbox" name="<?php echo $key?>" id="case" /> <label for="case" ></label>
+                        <input type="checkbox" name="articles['<?php echo $key?>']"/> <label for="case" ></label>
                     </div>
                 </div>
     <?php } ?>

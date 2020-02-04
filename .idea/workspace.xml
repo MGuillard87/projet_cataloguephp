@@ -57,7 +57,8 @@
       <workItem from="1580285007001" duration="22958000" />
       <workItem from="1580372917364" duration="6985000" />
       <workItem from="1580477042244" duration="9230000" />
-      <workItem from="1580716986405" duration="23529000" />
+      <workItem from="1580716986405" duration="23876000" />
+      <workItem from="1580803894994" duration="16480000" />
     </task>
     <task id="LOCAL-00001" summary="1er commit phpstorm">
       <created>1580732727962</created>
@@ -77,7 +78,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -104,26 +107,32 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2505" y="115" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732727405" />
-    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580732933238">
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580826097724">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732933238" />
+    <state x="2012" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1580826097724" />
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1580386404234">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580386404234" />
-    <state x="2714" y="444" key="NewPhpFileDialog" timestamp="1580744703781">
+    <state x="2714" y="444" key="NewPhpFileDialog" timestamp="1580821766743">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2714" y="444" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580744703781" />
+    <state x="2714" y="444" key="NewPhpFileDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1580821766743" />
     <state x="2381" y="163" key="SettingsEditor" timestamp="1580732679886">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580732679886" />
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580717428817">
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1580826097724">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580717428817" />
+    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1580826097724" />
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580803897112">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580803897112" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -134,19 +143,8 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/panier.php</url>
-          <line>82</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/panier.php</url>
-          <line>48</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/panier.php</url>
-          <line>58</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/catalogue_fonction.php</url>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
