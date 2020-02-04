@@ -19,6 +19,7 @@ var_dump($_POST);
                     <h1>Boutique</h1>
                 </div>
             </div>
+        <form method="post" action="panier.php">
 <?php
 // Toujours vérifier que les informatons utilisées existent: var_dump très utile dans ce cas
 //var_dump($liste_articles)
@@ -40,8 +41,6 @@ try {
             // apppel de la fonction permettant de retourner le total du panier
             $sum = totalPanier($sum, $article['price']);
     ?>
-
-            <form method="post" action="panier.php">
                 <div class="row panier">
                     <div class="col align-self-center">
                         <img src="<?php echo $article['image']; ?>" width="300" class="rounded corners img-fluid" alt="article à acheter">

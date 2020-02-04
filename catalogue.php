@@ -1,6 +1,5 @@
 <?php
 include ('catalogue_fonction.php');
-var_dump($liste_articles);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -39,7 +38,7 @@ var_dump($liste_articles);
                         <h2><?php echo $article["price"]." euros" ; ?> </h2>
                     </div>
                     <div class="col align-self-center"">
-                        <input type="checkbox" name="articles['<?php echo $key?>']"/> <label for="case" ></label>
+                        <input type="checkbox" name="articles[<?php echo $key?>]"/> <label for="case" ></label>
                     </div>
                 </div>
     <?php } ?>

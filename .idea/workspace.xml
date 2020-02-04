@@ -4,7 +4,6 @@
     <list default="true" id="e7454674-774e-451a-b2de-0c3153194160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue_fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue_fonction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       <workItem from="1580372917364" duration="6985000" />
       <workItem from="1580477042244" duration="9230000" />
       <workItem from="1580716986405" duration="23876000" />
-      <workItem from="1580803894994" duration="16480000" />
+      <workItem from="1580803894994" duration="17386000" />
     </task>
     <task id="LOCAL-00001" summary="1er commit phpstorm">
       <created>1580732727962</created>
@@ -143,8 +142,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/panier.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/catalogue_fonction.php</url>
-          <option name="timeStamp" value="9" />
+          <line>3</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
