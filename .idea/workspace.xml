@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e7454674-774e-451a-b2de-0c3153194160" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue_fonction.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue_fonction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/panier.php" beforeDir="false" afterPath="$PROJECT_DIR$/panier.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +58,8 @@
       <workItem from="1580716986405" duration="23876000" />
       <workItem from="1580803894994" duration="22403000" />
       <workItem from="1580889573083" duration="1329000" />
-      <workItem from="1580985020477" duration="967000" />
+      <workItem from="1580985020477" duration="1335000" />
+      <workItem from="1580986607654" duration="1853000" />
     </task>
     <task id="LOCAL-00001" summary="1er commit phpstorm">
       <created>1580732727962</created>
@@ -130,10 +130,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1580826097724" />
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580985031254">
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580986667405">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580985031254" />
+    <state x="3050" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580986667405" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1580986886028">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1580986886028" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

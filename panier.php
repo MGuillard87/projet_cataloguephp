@@ -1,7 +1,6 @@
 <?php
 // inclure les fonctions et les données via un fichier pour les utiliser dans ce fichier
 include('catalogue_fonction.php');
-var_dump($_POST);
 //var_dump($_POST['quantites']);
 
 //foreach ($liste_articles as $clef=> $produits){
@@ -51,7 +50,13 @@ try {
                     // on enregistre dans une variable les informations récupérées
                     $article = $liste_articles[$key];
                     // apppel de la fonction permettant de retourner le total du panier
-                    $sum = totalPanier($sum, $article['price'], $_POST['quantites'][$key]); // revoir le calcul avec fonction
+                if (isset( $_POST['quantites'][$key])){
+                    $quantite = $_POST['quantites'][$key];
+                }else {
+                    $quantite = 0;
+                }
+                $prix= $article['price'];
+                    $sum = totalPanier($sum, $prix, $quantite)// revoir le calcul avec fonction
                     ?>
                     <div class="row panier">
                         <div class="col align-self-center">
@@ -69,7 +74,7 @@ try {
 
                         <div class="col align-self-center">
                             <input type="hidden" name="articles[<?php echo $key ?>]" id="case" value=""/>
-                            <input type="number" name="quantites[<?php echo $key ?>]" min="1" value="<?php echo $_POST['quantites'][$key] ?>"/><br><label
+                            <input type="number" name="quantites[<?php echo $key ?>]" min="1" value="<?php echo  $quantite ?>"/><br><label
                                 for="case">Quantité</label>
                         </div>
                     </div>
