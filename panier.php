@@ -46,43 +46,35 @@ try {
     // Création de la variable sum pour calculer le total panier
 // affiche le panier pour la première fois
         $sum = 0;
-        foreach ($_POST['articles'] as $key => $selective) {
-            if (!empty($_POST)) {
-                // on enregistre dans une variable les informations récupérées
-                $article = $liste_articles[$key];
-                // apppel de la fonction permettant de retourner le total du panier
-                $sum = totalPanier($sum, $article['price'], $_POST['quantites']['key']); // revoir le calcul avec fonction
-                var_dump($_POST['quantites']['article1']);
-                ?>
-                <div class="row panier">
-                    <div class="col align-self-center">
-                        <img src="<?php echo $article['image']; ?>" width="300" class="rounded corners img-fluid"
-                             alt="article à acheter">
-                    </div>
+        if (!empty($_POST)) {
+            foreach ($_POST['articles'] as $key => $selective) {
+                    // on enregistre dans une variable les informations récupérées
+                    $article = $liste_articles[$key];
+                    // apppel de la fonction permettant de retourner le total du panier
+                    $sum = totalPanier($sum, $article['price'], $_POST['quantites'][$key]); // revoir le calcul avec fonction
+                    ?>
+                    <div class="row panier">
+                        <div class="col align-self-center">
+                            <img src="<?php echo $article['image']; ?>" width="300" class="rounded corners img-fluid"
+                                 alt="article à acheter">
+                        </div>
 
-                    <div class="col align-self-center">
-                        <h2><?php echo $article['name'];; ?></h2>
-                    </div>
+                        <div class="col align-self-center">
+                            <h2><?php echo $article['name'];; ?></h2>
+                        </div>
 
-                    <div class="col align-self-center">
-                        <h2><?php echo $article['price'] . " euros"; ?> </h2>
-                    </div>
+                        <div class="col align-self-center">
+                            <h2><?php echo $article['price'] . " euros"; ?> </h2>
+                        </div>
 
-                    <div class="col align-self-center">
-                        <input type="hidden" name="articles[<?php echo $key ?>]" id="case" value=""/>
-                        <input type="number" name="quantites[<?php echo $key ?>]" min="1" value="<?php echo $_POST['quantites'][$key] ?>"/><br><label
-                            for="case">Quantité</label>
+                        <div class="col align-self-center">
+                            <input type="hidden" name="articles[<?php echo $key ?>]" id="case" value=""/>
+                            <input type="number" name="quantites[<?php echo $key ?>]" min="1" value="<?php echo $_POST['quantites'][$key] ?>"/><br><label
+                                for="case">Quantité</label>
+                        </div>
                     </div>
-                </div>
-                <?php
-            } elseif (!empty($_POST['quantites']) && isset($_POST['quantites'])){
-                var_dump($_POST['quantites']['article1']);?>
-                <div class="col align-self-center">
-                    <input type="hidden" name="articles[<?php echo $key ?>]" id="case" value=""/>
-                    <input type="number" name="quantites[<?php echo $key ?>]" min="1" value="<?php $_POST['quantites']['article1'] ?>"/><br><label
-                        for="case">Quantité</label>
-                </div>
-       <?php     }
+                    <?php
+                }
         }
         // Affichage du total panier
         ?>

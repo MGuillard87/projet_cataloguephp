@@ -35,7 +35,7 @@ function afficheArt($nom, $prix, $img){
 // fonction qui retourne le total du panier et affiche ce total
 function totalPanier($sum, $prixProduit, $quantiProdui)
 {
-       return $sum + $prixProduit* $quantiProdui=intval($quantiProdui) ;
+       return $sum + $prixProduit* ($quantiProdui=intval($quantiProdui)) ;
 }
 
 ?>
